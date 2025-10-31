@@ -86,14 +86,14 @@ def get_ideas_channel() -> discord.ForumChannel:
 @mcp.tool()
 async def list_idea_threads(
     limit: int = 20,
-    archived: bool = False
+    archived: bool = True
 ) -> List[Dict[str, Any]]:
     """
     フォーラムチャンネルのスレッド一覧を取得
 
     Args:
         limit: 取得するスレッド数（デフォルト: 20）
-        archived: アーカイブされたスレッドも含めるか（デフォルト: False）
+        archived: アーカイブされたスレッドも含めるか（デフォルト: True）
 
     Returns:
         スレッド情報のリスト。各スレッドには以下の情報が含まれます:

@@ -170,7 +170,9 @@ Claude: [キーワード検索でマッチするスレッドを表示]
 
 **パラメータ:**
 - `limit` (int, optional): 取得するスレッド数（デフォルト: 20）
-- `archived` (bool, optional): アーカイブされたスレッドも含めるか（デフォルト: false）
+- `archived` (bool, optional): アーカイブされたスレッドも含めるか（デフォルト: true）
+  - `true`: アクティブ+アーカイブ両方を取得（推奨）
+  - `false`: アクティブなスレッドのみ
 
 ### `get_thread_messages`
 特定スレッドのメッセージを取得
