@@ -5,12 +5,28 @@ DiscordのフォーラムチャンネルをClaude Code経由でアクセスで�
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
+## こんな人におすすめ
+
+- 普段からDiscordでチーム開発をしている
+- アイデアやメモをDiscordのフォーラムに書いている
+- Claude Codeから直接Discordの内容を確認・検索したい
+- NotionやSlackより、使い慣れたDiscordを使いたい
+
 ## 機能
 
 - スレッド一覧取得: フォーラムチャンネルのスレッドを一覧表示
 - メッセージ取得: 特定スレッドの全メッセージを取得
 - キーワード検索: スレッド名やメッセージ内容から検索
 - 最新アイデア取得: 直近のアイデアスレッドを取得
+
+## セットアップの難易度
+
+初回セットアップには以下が必要です（所要時間: 約30分）：
+- Discord Botの作成（Developer Portal）
+- フォーラムチャンネルの作成・設定
+- Python環境のセットアップ
+
+詳しくは [セットアップガイド](docs/SETUP_GUIDE.md) を参照してください。
 
 ## 必要要件
 
@@ -20,12 +36,17 @@ DiscordのフォーラムチャンネルをClaude Code経由でアクセスで�
 
 ## インストール
 
+### クイックスタート（初心者向け）
+
+初めての方は **[詳細セットアップガイド](docs/SETUP_GUIDE.md)** を参照してください。
+画像付きで丁寧に説明しています。
+
 ### 対話的セットアップ（推奨）
 
 ```bash
 # 1. リポジトリをクローン
-git clone https://github.com/your-username/discord-mcp.git
-cd discord-mcp
+git clone https://github.com/SixMallard12356/Claude-Code-Discord-MCP.git
+cd Claude-Code-Discord-MCP
 
 # 2. セットアップスクリプトを実行
 python setup.py
@@ -36,6 +57,8 @@ python setup.py
 - `.env`ファイルの作成
 - 依存関係のインストール
 - Claude Code MCPへの登録
+
+**困ったら**: [トラブルシューティング](#トラブルシューティング) または [詳細ガイド](docs/SETUP_GUIDE.md) を参照
 
 ### 手動セットアップ
 
